@@ -22,61 +22,170 @@ body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1;
+
+  background-image: url(../img/images/background.png);
 }
+/***********************************************/
+/* general components */
+/***********************************************/
 .container {
   width: 120rem;
 }
 .grid {
   display: grid;
 }
-/**********************************************/
-/*Playground Section*/
-/**********************************************/
 
+/***********************************************/
+/* Playground components */
+/***********************************************/
 .playground-grid {
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
-.main-table {
+
+/* Left-table */
+.left-table {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Left Table First */
+.left-table-first--rule,
+.left-table-second--rule {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.left-table-first {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.left-table-2img {
+  border: 1px solid #fff;
+  margin: 0.5rem;
+}
+.left-table-2img-link {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.left-table-2img-link:link,
+.left-table-2img-link:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+.left-table-2img-link:active .left-table-2img--img {
+  transform: scale(0.9);
+}
+.left-table-2img--img {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+/* Left Table Second */
+.left-table-second {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.left-table-puuimg {
+  border: 1px solid #fff;
+}
+/* Main Table */
+.table-image-container {
+  background-image: url(../img/images/table.png);
   background-size: cover;
+  width: 100%;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 40vh;
-  position: relative;
 }
-.playground-table {
-  position: absolute;
-  z-index: -9999;
-  width: 100%;
-  height: auto;
-}
-.playground-content-all {
+.main-table-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 60%;
-  margin: 5rem auto;
+  align-items: center;
+  justify-content: center;
 }
-.playground-link:link,
-.playground-link:visited {
+.main-table-contentall {
+  width: 60%;
+  margin: 0 auto;
+  padding: 8rem 0 8rem 4rem;
+}
+.main-table-link:link,
+.main-table-link:visited {
   text-decoration: none;
   display: inline-block;
   border: 1px solid #fff;
   text-align: center;
+  border: 1px solid #fff;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3rem;
 }
-.playground-img {
-  width: 60%;
-  padding: 2rem 0;
-}
-.playground-link:active .playground-img {
+.main-table-link:active .main-table-dice-img {
   transform: scale(0.9);
 }
-.summary-rule {
+.main-table-dice-img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 60%;
+}
+.play-rule-maintable {
   color: #fff;
-  padding-top: 0.7rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  border: 1px solid #fff;
   font-size: 0.8rem;
 }
-.summary-rule-title,
-.summary-rule-descripton {
+
+/* Right Table */
+/* Right Table First */
+.right-table-first--rule {
+  color: #fff;
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.right-table-second--rule {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.rigth-table-pullallimg-link:link,
+.rigth-table-pullallimg-link:visited {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-left: 2rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+}
+.rigth-table-pullallimg-link:active .right-table-3img--img {
+  transform: scale(0.9);
+}
+.right-table-3img--img {
+  width: 100%;
+}
+.right-table-second {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-left: 2rem;
+}
+.right-table-puuimg {
+  border: 1px solid #fff;
+}
+.right-table-3img-link:link,
+.right-table-3img-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.right-table-3img-link:active .right-table-pullonly--img {
+  transform: scale(0.9);
+}
+.right-table-pullonly--img {
+  width: 70%;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }

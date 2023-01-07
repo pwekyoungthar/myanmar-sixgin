@@ -24,7 +24,7 @@ body {
   line-height: 1;
 
   background-image: url(../img/images/background.png);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 /***********************************************/
 /* general components */
@@ -57,8 +57,34 @@ body {
   z-index: -999;
   top: 3rem;
 }
+.dice {
+  position: absolute;
+  width: 2.5rem;
+}
+.dice-1 {
+  top: 10rem;
+  left: 5rem;
+}
+.dice-2 {
+  top: 7.8rem;
+  left: 3.5rem;
+}
+.dice-3 {
+  top: 8rem;
+  left: 6.5rem;
+}
+
+.result-dice {
+  position: absolute;
+  top: 5rem;
+  left: 35rem;
+}
+.result-dice .img-result {
+  width: 5rem;
+}
 .banker-grid {
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
 }
 .banker {
   display: grid;
@@ -287,4 +313,7 @@ body {
   color: #fff;
   font-size: 5rem;
   margin-left: 2rem;
+}
+.hidden {
+  opacity: 0;
 }

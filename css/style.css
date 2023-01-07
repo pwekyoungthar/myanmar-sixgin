@@ -21,9 +21,62 @@ html {
 body {
   font-family: sans-serif;
   font-weight: 400;
-  color: #fff;
   line-height: 1;
 }
 .container {
   width: 120rem;
+}
+.grid {
+  display: grid;
+}
+/**********************************************/
+/*Playground Section*/
+/**********************************************/
+
+.playground-grid {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.main-table {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+.playground-table {
+  position: absolute;
+  z-index: -9999;
+  width: 100%;
+  height: auto;
+}
+.playground-content-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  margin: 5rem auto;
+}
+.playground-link:link,
+.playground-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.playground-img {
+  width: 60%;
+  padding: 2rem 0;
+}
+.playground-link:active .playground-img {
+  transform: scale(0.9);
+}
+.summary-rule {
+  color: #fff;
+  padding-top: 0.7rem;
+  font-size: 0.8rem;
+}
+.summary-rule-title,
+.summary-rule-descripton {
+  text-align: center;
 }

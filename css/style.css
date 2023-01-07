@@ -24,6 +24,7 @@ body {
   line-height: 1;
 
   background-image: url(../img/images/background.png);
+  overflow: hidden;
 }
 /***********************************************/
 /* general components */
@@ -37,15 +38,24 @@ body {
 /***********************************************/
 /* Banker components */
 /***********************************************/
+.section-banker {
+  margin-top: -4rem;
+}
 .dice-content {
   justify-self: center;
+  margin-bottom: -10rem;
+  position: relative;
 }
 .dice-cover {
   width: 13rem;
   position: absolute;
+  top: 3rem;
 }
 .dice-plate {
   width: 13rem;
+  position: absolute;
+  z-index: -999;
+  top: 3rem;
 }
 .banker-grid {
   grid-template-columns: repeat(3, 1fr);

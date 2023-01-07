@@ -10,7 +10,19 @@
   </head>
   <body>
     <section class="section-banker">
-      <h1>Section Banker</h1>
+      <div class="container grid banker-grid">
+        <div class="dice-content">
+          <img src="./img/images/cover.png" alt="" class="dice-cover" />
+          <img src="./img/images/plate.png" alt="" class="dice-plate" />
+        </div>
+        <div class="banker">
+          <img src="./img/lady/lady.png" alt="" class="banker-lady-img" />
+        </div>
+        <div class="timer">
+          <p class="count-title">Counting</p>
+          <p class="count-timer">15 : 00</p>
+        </div>
+      </div>
     </section>
     <section class="section-playground">
       <div class="container grid playground-grid">
@@ -607,15 +619,52 @@
               </a>
             </div>
           </div>
-          <div class="right-table-second">A Puu Only</div>
         </div>
       </div>
     </section>
-    <section class="section-player">
-      <h1>Section Player</h1>
+    <section class="section-player grid">
+      <div class="player-info-container">
+        <div class="player-container">
+          <img src="./img/lady/user-img.jfif" alt="" class="user-img" />
+          <span class="user-name">Hello World</span>
+        </div>
+        <div class="unit-container">
+          <div class="unit-imgs">
+            <a href="#" class="unit-img-link">
+              <img src="./img/Coils/10.png" alt="" class="unit-img" />
+            </a>
+            <a href="#" class="unit-img-link">
+              <img src="./img/Coils/20.png" alt="" class="unit-img" />
+            </a>
+            <a href="#" class="unit-img-link">
+              <img src="./img/Coils/30.png" alt="" class="unit-img" />
+            </a>
+            <a href="#" class="unit-img-link">
+              <img src="./img/Coils/50.png" alt="" class="unit-img" />
+            </a>
+            <a href="#" class="unit-img-link">
+              <img src="./img/Coils/80.png" alt="" class="unit-img" />
+            </a>
+            <a href="#" class="unit-img-link">
+              <img src="./img/Coils/100.png" alt="" class="unit-img" />
+            </a>
+          </div>
+        </div>
+        <div class="total-unit-container">Total Unit = 0</div>
+      </div>
     </section>
     <section class="section-report">
       <h1>Section Report</h1>
     </section>
+
+    <!-- ionic icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
